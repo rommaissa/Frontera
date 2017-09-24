@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Favicon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{!-- Fonts --}}
+     <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Jim+Nightshade|Satisfy" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Mono:300|Vollkorn" rel="stylesheet">
+    {{!-- Bootstrap & font-awesome & prismjs--}}
+     <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}" />
+     <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome.min.css"}}" />
+     <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" /> 
+     <link rel="stylesheet" type="text/css" href="{{asset "css/aos.css"}}" />  
+
+     {{!-- Custom stylesheet --}}
+     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+    
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+    {{!-- The blog navigation links --}}
+    {{navigation}}
+
+        {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+  
+    {{{body}}}
+         
+    <a href="#page-top" class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      
+        {{!-- The tiny footer at the very bottom --}}
+
+    <footer class="footer navbar navbar-fixed-bottom">
+      <div class="container clearfix">
+        <p class="left"> Designed by <strong> { Web Frontera }</strong> , Proudly using Ghost </p>
+        <p class="right"> &copy; {{date format=" YYYY "}} — All Rights Reserved.</p>
+      </div>
+    </footer>
+   
+     {{ghost_foot}} 
+
+     <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src={{asset "js/bootstrap.min.js"}}></script>
+ 
+
+    {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+    <script src="{{asset "js/jquery-3.2.0.min.js"}}"></script>  
+    <script src="{{asset "js/backtop.js"}}"></script>  
+    <script src="{{asset "js/jquery.ghostHunter.min.js"}}"></script>  
+    <script src="{{asset "js/prism.js"}}"></script>
+    <script src="{{asset "js/aos.js"}}"></script>
+    {{!-- Ghost outputs important scripts and data with this tag --}}
+   
+ {{!-- Search --}}
+
+  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog clearfix">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline" action="{{@blog.url}}/search">
+            <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-sm-8">
+               <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search for article">
+               <span class="input-group-btn">
+               <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+               </span>
+              </div><!-- /input-group -->
+              <section id="results" style="text-align:left"></section>  
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>  
+    $(".form-control").change().ghostHunter({
+        results : "#results",
+        onKeyUp : true,  
+    });
+</script> 
+ <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+ 
+</body>
+</html>

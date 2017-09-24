@@ -1,0 +1,25 @@
+{
+    "name": "Frontera",
+    "description": "Frontera responsive theme for ghost, simple & elegant .",
+    "demo": "webfrontera.herokuapp.com",
+    "version": "1.0.0",
+    "engines": {
+        "ghost": ">=0.9.0 <1.0.0"
+    },
+    "author": {
+        "name": "Rommaissa",
+        "email": "rommaissa@gmail.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Personal Blogs",
+            "Press"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme"
+    ]
+}

@@ -1,0 +1,502 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+    1.  General
+    2.  Navbar
+    3.  Header
+    4.  Loop
+    5.  Single Post
+    6.  Subscribe
+    7.  Author 
+    8.  Footer
+
+*/
+/* ==========================================================================
+   1. General 
+   ========================================================================== */
+
+body{
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    margin-top: 50px;
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 14px;
+    font-style: normal;
+}
+a{
+    color: #001f3f;
+}
+a:hover{
+  text-decoration: none;
+  color: #39cccc;
+}
+ol, ul{
+    font-size: 16px;
+}
+.bleu{
+   color: #39cccc;  
+}
+.special{
+    font-size: 18px;
+    font-style: inherit;
+    font-weight: 900;
+    font-family: 'Jim Nightshade', cursive;
+    font-family: 'Sofia'   
+}
+.lead{
+    font-size: 20px;
+}
+.btn-default{
+    background:#001f3f;
+    color: white; 
+    border-color: #001f3f;
+}
+.btn-default:hover{
+   background: #39cccc;
+   color:white; 
+   border-color:#39cccc; 
+}
+
+/* ==========================================================================
+   2. Navbar
+   ========================================================================== */
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: white;
+    border-color: #e7e7e7;
+    font-size: 20px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #39cccc;
+    background-color: white;
+    font-size: 20px;
+}
+.navbar-default{
+    font-size:20px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color:#39cccc; 
+    font-size:22px;
+}
+.navbar-default .navbar-brand {
+    color:#39cccc;
+    font-size:30px;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Calligraffitti', cursive; 
+    font-family: 'Jim Nightshade', cursive;
+    font-family: 'Sofia';
+}
+.navbar-default .navbar-brand:hover {
+    color: #39cccc; 
+    font-size:26px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #001f3f;
+}
+/* ==========================================================================
+   3. Header
+   ========================================================================== */
+.top-img{
+    margin: 25px 20px;
+    height: 550px;
+    text-align: center;
+    color: white;
+    background: black;
+    background: no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+.top-img h1>a{
+    color: white !important;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Calligraffitti', cursive; 
+    font-family: 'Jim Nightshade', cursive;
+    font-family: 'Sofia';
+}
+#social .fa-rss {
+  color: #FA9B39;
+}
+.top-img h1>a:hover{
+    color:#39cccc;
+}
+.top-img h1{
+    margin-top: 200px;
+}
+#social .fa-rss:hover {
+  color: #FA9B39;
+}
+
+/* ==========================================================================
+   4. Loop
+   ========================================================================== */
+
+.post img {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    height: 270px !important;
+}
+.post h1 {
+    margin-top:60px; 
+}
+.post{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+}
+#head-post{
+    margin-top: 0px;
+}
+#head-post ul {
+margin: 0;
+padding: 0;
+}
+#head-post ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 5px;
+    margin-bottom: 3px; 
+}
+#body-post{
+    margin-top: 10px;
+}
+.footer-post  {
+   float: right;
+   margin-right: 25px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.footer-post ul {
+   margin: 0;
+   padding: 0;
+}
+.footer-post ul li  {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 17px;
+}
+.footer-post ul .fa-google-plus:hover {
+   color:#dd4b39;
+   font-size: 18px;
+}
+.footer-post ul .fa-twitter:hover {
+   color: #55ACEE ;
+   font-size: 18px;
+}
+.footer-post ul .fa-facebook:hover {
+   color: #3B5998;
+   font-size: 18px;
+}
+/* ==========================================================================
+   5. Single post
+   ========================================================================== */
+hr{
+    margin-top: 60px !important;
+}
+.singlepost .head-singlepost ul {
+    margin: 0;
+    padding: 0;
+}
+.singlepost .head-singlepost ul li {
+    
+    list-style: none;
+    display: inline; 
+    bottom: 10px; 
+}
+.singlepost .head-singlepost li{
+padding: 3px;
+}
+.singlepost img{
+    width:100%;
+}
+.singlepost p{
+    margin-top :10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.postimg{
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    display: table;
+    height: 60vh;
+    margin-bottom: 5rem;
+    text-align: center;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.read-article {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 50%;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    height: 300px;
+    min-height: 300px;
+    margin-bottom: 40px;
+    padding: 30px; 
+}
+ .read-article .read h2{
+    margin-top: 60px;
+}
+#disqus_thread{
+    margin: 20px 0 ;
+}
+blockquote{
+     border-left: none;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    position: relative;
+    padding: 25px 60px;
+    text-align: center;
+    font-size: 30px;
+}
+blockquote:before, blockquote:after {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 120px;
+    line-height: 1;
+}
+blockquote:before {
+    top: 0;
+    left: 0;
+    content: "\201C";
+    color: #39cccc;
+}
+blockquote:after {
+    top: 0;
+    right: 0;
+    content: "\201D";
+    color: #39cccc;
+}
+.title-style{
+    text-align: center;
+    margin : 40px;
+}
+.body-style{
+    margin: 60px 0;
+    font-size: 18px;
+}
+.body-style h2{
+  color:#39cccc;
+  margin-bottom: 20px;  
+}
+/* ==========================================================================
+   6. Subscribe
+   ========================================================================== */
+.gh-subscribe {
+    border: #f5f8fa 1px solid;
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: #f5f8fa;
+    border-radius: 5px;
+}
+.gh-subscribe-title {
+    margin-bottom: 0;
+    font-size: 2.4rem;
+}
+.gh-subscribe form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+.gh-subscribe .form-group {
+    flex-grow: 1;
+    max-width: 300px;
+}
+.gh-subscribe .form-group {
+    flex-grow: 1;
+    max-width: 300px;
+}
+.gh-subscribe .subscribe-email {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+    transition: all ease 0.5s;
+}
+.gh-subscribe-rss {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+}
+ input {
+    width: 260px;
+    padding: 6px 9px;
+    margin: 0 0 5px 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.4em;
+    background: #fff;
+    border: #e7eef2 1px solid;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+.gh-subscribe .subscribe-email {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+    transition: all ease 0.5s;
+}
+button {
+    height: 36px;
+    width: auto;
+    display: inline-block;
+    padding: 0.1rem 1.5rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: none;
+    border-radius: 0.3rem;
+    border: rgba(0,0,0,0.05) 0.1em solid;
+    background:#001f3f ;
+}
+.btn-blue {
+    background:#001f3f !important;
+    color: #fff;
+}
+/* ==========================================================================
+   7. Author
+   ========================================================================== */
+#author{
+   margin: 70px 0; 
+}
+.avatar{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+}
+.author-profile{
+    text-align: center;
+}
+.author{
+    margin-top: 10px;
+}
+.author-meta span{
+    margin: 5px;
+}
+.author-meta{
+    font-size:16px;
+}
+/* ==========================================================================
+   8. footer
+   ========================================================================== */
+.footer{
+    position: relative;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px solid #e7e7e7;
+    height: 50px;
+    font-size: 15px;  
+}
+footer p {
+    padding: 15px;
+}
+.right{
+    display: block;
+    width: 45%;
+    float: right;
+    text-align: right;
+}
+.left{
+    display: block;
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+.center{
+    margin: 0 10px;
+}
+.top{
+    position: fixed;
+    text-align: center;
+    font-size: 30px;
+    background:#001f3f;
+    color:white;
+    bottom: 160px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 5px;
+    font-size: 25px;
+}
+.top:hover{
+    background:#39cccc; 
+    color:white;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-body{
+    height: auto;
+    min-height: 200px !important;
+}
+.close{
+    color:#001f3f;
+    border-color:#001f3f;
+    opacity: 7;
+}
+.close:hover{
+   background:  white;
+   color:#39cccc; 
+   border-color:#39cccc; 
+}
+.pager{
+    margin: 35px 0;
+}
+
+ 

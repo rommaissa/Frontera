@@ -1,0 +1,33 @@
+{{!< default}}
+{{!-- Everything inside the #author tags pulls data from the author --}}
+{{#author}}
+   <section class="container clearfix">
+      <div class="col-ms-12">
+        <div class="author-profile">
+        {{#if image}}
+        <figure class="author">
+            <div class="avatar center-block" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+        </figure>
+        {{/if}}
+        <h1 class="author-title">{{name}}</h1>
+        {{#if bio}}
+            <p class="lead">{{bio}}</p>
+        {{/if}}
+        <div class="author-meta">
+            {{#if location}}<span class="fa fa-map-marker"> {{location}}</span>{{/if}}
+            {{#if website}}<span> <a class="fa fa-link" aria-hidden="true" href="{{website}}"> {{website}}</i></a></span>{{/if}}
+            <span class="fa fa-pencil"> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+        </div>
+      </div>
+    </div>
+   </section>
+{{/author}}
+<hr>
+
+{{!-- The main content area on the homepage --}}
+<main class="container" role="main">
+
+    {{!-- The tag below includes the post loop - partials/loop.hbs --}}
+    {{> "loop"}}
+
+</main>

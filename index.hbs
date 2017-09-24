@@ -1,0 +1,16 @@
+{{!< default}}
+<!-- Index cover image  -->
+    <div class="container clearfix">
+       <div class="img-responsive top-img center-block "{{#if @blog.cover}} style="background-image: url({{@blog.cover}})"{{else}}no-cover  style="display:none"{{/if}} alt="cover image">
+          <h1 data-aos="fade-right">Welcom To<a href="{{@blog.url}}"> {{@blog.title}}</a></h1>
+          <h2 data-aos="fade-left">{{@blog.description}}</h2>
+      </div>
+    </div>
+<!-- Index content -->
+  <main class="container clearfix" role="main">
+    <!-- includes the post loop - partials/loop.hbs -->
+        {{> "loop"}} 
+    <!-- Previous/next page links - displayed on every page -->
+        {{pagination}}
+  </main>
+

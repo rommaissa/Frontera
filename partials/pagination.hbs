@@ -1,0 +1,14 @@
+{{! pagination}}
+
+<nav class="pagination" role="navigation">
+<div class="container">
+  <div class="col-sm-12">
+    <div class="pager">
+        {{#if prev}}
+        <a class="pull-left" href="{{page_url prev}}"><i class="fa fa-angle-double-left fa-2x" aria-hidden="true"></i></a> {{/if}}
+        <span class="special center">Page {{page}} of {{pages}}</span> {{#if next}}
+        <a class="pull-right" href="{{page_url next}}"><i class="fa fa-angle-double-right fa-2x" aria-hidden="true"></i></a> {{/if}}
+    </div>
+  </div>
+</div>
+</nav>

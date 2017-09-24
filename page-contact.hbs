@@ -1,0 +1,17 @@
+{{!-- static page for contact--}} 
+
+{{!< default}} 
+{{#is "page"}}
+{{#post}}
+   <main class="container" role="main">
+    <article class="col-md-8 col-md-offset-2 {{post_class}}">
+        <h2 class="title-style">
+            <a href="{{url}}" class="blue">{{title}}</a>
+        </h2>
+        <div class="body-style">
+            <p class="lead"> {{content}}</p>
+        </div>
+    </article>
+    </main>
+{{/post}}
+{{/is}}
